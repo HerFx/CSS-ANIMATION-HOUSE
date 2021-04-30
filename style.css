@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(97, 170, 238);
+}
+span{
+    position: absolute;
+    padding: 20px;
+    background-color: brown;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 5%;
+    left: 5%;
+    cursor: pointer;
+    
+}
+div{
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom:0;
+    left: 0;
+    transition: 0.2s;
+}
+span:hover~div:nth-of-type(1){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: brown;
+    width: 50vh;
+    height: 30vh;
+    z-index: 3;
+    transition-delay: 0.2;
+}
+span:hover~div:nth-of-type(2){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -91.5%) rotate(45deg);
+    background-color: black;
+    width: 35.45vh;
+    height: 35.45vh;
+    z-index: 2;
+}
+span:hover~div:nth-of-type(3){
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10vh;
+    height: 15vh;
+    background-color: gray;
+    z-index: 3;
+}
+span:hover~div:nth-of-type(4){
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -100%);
+    background-color: yellow;
+    width: 10vh;
+    height: 10vh;
+    z-index: 3;
+}
+span:hover~div:nth-of-type(5){
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%, -100%);
+    background-color: yellow;
+    width: 10vh;
+    height: 10vh;
+    z-index: 3;
+}
+span:hover~div:nth-of-type(6){
+    top: 50%;
+    left: 50%;
+    transform: translate(180%, -220%);
+    background-color: gray;
+    width: 5vh;
+    height: 15vh;
+    z-index: 1; 
+}
+span:hover~div:nth-of-type(2) {
+    transition-delay: 0.2s;
+}
+
+span:hover~div:nth-of-type(3) {
+    transition-delay: 0.4s;
+}
+
+span:hover~div:nth-of-type(4) {
+    transition-delay: 0.6s;
+}
+
+span:hover~div:nth-of-type(5) {
+    transition-delay: 0.8s;
+}
+
+span:hover~div:nth-of-type(6) {
+    transition-delay: 1s;
+}
+span:hover~div{
+    transition: 1s;
+}
